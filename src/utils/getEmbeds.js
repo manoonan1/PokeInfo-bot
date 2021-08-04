@@ -7,13 +7,13 @@ const { getStatsEmbed } = require('./statHelpers');
 async function getEmbed(message, index) {
     let embed = new MessageEmbed();
     if (index == 0) {
-        embed = await getShinyEmbed(message, index);
+        embed = await getShinyEmbed(message);
     }
     if (index == 1) {
-        embed = await getGifEmbed(message, index);
+        embed = await getGifEmbed(message);
     }
     if (index==2) {
-        embed = await getStatsEmbed(message, index);
+        embed = await getStatsEmbed(message);
     }
     return embed;
 }

@@ -1,6 +1,6 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getPokemonInfo } = require('./getPokemon');
+const { getPokemonData } = require('./getPokemon');
 
 //index comes from bots.js commandIndex. For $shiny this value should be = 0
 //=======================$shiny helper functions====================//
@@ -13,9 +13,11 @@ async function getShinyEmbed(message, index) {
     return embed;
 }
 
-async function getImageURLs(message, shinyFlag, index) {
-    const pokemonID = await getPokemonInfo(message, index);
-    const strId = String(pokemonID).padStart(4, '0');
+async function getImageURLs(message, shinyFlag) {
+    const pokeData = await getPokemonData(message);
+    const { id } = pokeData;
+    let strId = `${id}`;
+    strId = String(strId).padStart(4, '0');
     if (shinyFlag==0) {
         return "https://files.pokefans.net/sprites/home/" + strId + "-000.png";
     }

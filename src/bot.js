@@ -1,13 +1,13 @@
 require ('dotenv').config();
 const { Client, MessageEmbed } = require('discord.js');
-const client = new Client();
-
 const { getEmbed } = require('./utils/getEmbeds');
 const { getAbility } = require('./utils/getAbility');
 
+const client = new Client();
 client.login(process.env.BOT_TOKEN);
 client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
-let commandIndex = 0; //index indicates which command we're using -- if index is a parameter, then the commandIndex should be getting passed in the function call.
+let commandIndex = 0; 
+//index indicates which command we're using -- if index is a parameter, then the commandIndex should be getting passed in the function call.
                 //0: $shiny
                 //1: $gifmon
                 //2: $stats
