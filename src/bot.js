@@ -2,18 +2,21 @@ require ('dotenv').config();
 const { Client, MessageEmbed } = require('discord.js');
 const client = new Client();
 
-const { getShinyEmbed, gifURL, statsEmbed } = require('./utils/getPokemon');
+const { getEmbed } = require('./utils/getEmbeds');
 const { getAbility } = require('./utils/getAbility');
 
 client.login(process.env.BOT_TOKEN);
-
 client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
-
+let commandIndex = 0; //index indicates which command we're using -- if index is a parameter, then the commandIndex should be getting passed in the function call.
+                //0: $shiny
+                //1: $gifmon
+                //2: $stats
 //==================================$shiny command============================//
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$shiny')){
-        const embed = await getShinyEmbed(message);
+        commandIndex = 0;
+        const embed = await getEmbed(message, commandIndex);
         message.channel.send(embed);
     }
 });
@@ -22,7 +25,8 @@ client.on('message',async message => {
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$gifmon')){
-        const url = await gifURL(message);
+        commandIndex = 1;
+        const url = await getEmbed(message, 1);
         message.channel.send(url);
     }
 });
@@ -31,7 +35,8 @@ client.on('message',async message => {
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$stats')){
-        const pokeData = await statsEmbed(message);
+        commandIndex = 2;
+        const pokeData = await getEmbed(message, 2);
         message.channel.send(pokeData);
     }
 });
