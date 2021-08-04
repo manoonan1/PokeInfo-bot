@@ -7,41 +7,32 @@ const client = new Client();
 client.login(process.env.BOT_TOKEN);
 client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
 
-let commandIndex = 0; 
-//commandIndex indicates which command we're using -- if index is a parameter, then the commandIndex should be getting passed in the function call.
-                //0: $shiny
-                //1: $gifmon
-                //2: $stats
-
-//==================================$shiny command============================//
+//=======================CommandSelector =====================//
 client.on('message',async message => {
     if(message.author.bot) return;
+    const commandIndex = commandSelector(message);
+    const embed = await getEmbed(message, commandIndex);
+    message.channel.send(embed);
+});
+
+function commandSelector(message) {
     if(message.content.toLowerCase().startsWith('$shiny')){
         commandIndex = 0;
-        const embed = await getEmbed(message, commandIndex);
-        message.channel.send(embed);
     }
-});
-
-//==================================$gifmon command============================//
-client.on('message',async message => {
-    if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$gifmon')){
         commandIndex = 1;
-        const url = await getEmbed(message, 1);
-        message.channel.send(url);
     }
-});
-
-//==================================$stats command============================//
-client.on('message',async message => {
-    if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$stats')){
         commandIndex = 2;
-        const pokeData = await getEmbed(message, 2);
-        message.channel.send(pokeData);
     }
-});
+    if(message.content.toLowerCase().startsWith('$ability')){
+        commandIndex = 3;
+    }
+    if(message.content.toLowerCase().startsWith('$abmon')){
+        commandIndex = 4;
+    }
+    return commandIndex;
+}
 
 //==================================$ability command============================//
 client.on('message',async message => {
