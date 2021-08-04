@@ -1,8 +1,8 @@
 const fetch = require('node-fetch');
 const { MessageEmbed } = require('discord.js');
-const { getShinyEmbed } = require('./shinyHelpers');
-const { getGifEmbed } = require('./gifHelpers');
-const { getStatsEmbed } = require('./statHelpers');
+const { getShinyEmbed } = require('./Pokemon/helperShiny');
+const { getGifEmbed } = require('./Pokemon/helperGif');
+const { getStatsEmbed } = require('./Pokemon/helperStats');
 
 async function getEmbed(message, index) {
     let embed = new MessageEmbed();

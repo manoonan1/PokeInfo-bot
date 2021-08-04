@@ -1,16 +1,18 @@
 require ('dotenv').config();
 const { Client, MessageEmbed } = require('discord.js');
 const { getEmbed } = require('./utils/getEmbeds');
-const { getAbility } = require('./utils/getAbility');
+const { getAbilityData } = require('./utils/Ability/getAbility');
 
 const client = new Client();
 client.login(process.env.BOT_TOKEN);
 client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
+
 let commandIndex = 0; 
-//index indicates which command we're using -- if index is a parameter, then the commandIndex should be getting passed in the function call.
+//commandIndex indicates which command we're using -- if index is a parameter, then the commandIndex should be getting passed in the function call.
                 //0: $shiny
                 //1: $gifmon
                 //2: $stats
+
 //==================================$shiny command============================//
 client.on('message',async message => {
     if(message.author.bot) return;
@@ -45,8 +47,7 @@ client.on('message',async message => {
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$ability')){
-        const ability = message.content.split(" ")[1];
-        const abData = await getAbility(ability);
+        const abData = getAbilityData(message);
         const { effect_entries, name, } = abData;
         const effect = effect_entries[1].effect 
         const embed = new MessageEmbed();

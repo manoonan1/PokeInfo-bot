@@ -1,6 +1,4 @@
 const fetch = require('node-fetch');
-const { MessageEmbed } = require('discord.js');
-//const { getShinyEmbed } = require('./shinyHelpers');
 const  POKEMON_URL = 'https://pokeapi.co/api/v2/pokemon';
 
 //=======================$general helper functions====================//
