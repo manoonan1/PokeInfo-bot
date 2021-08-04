@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const { Client, MessageEmbed } = require('discord.js');
 const  POKEMON_URL = 'https://pokeapi.co/api/v2/pokemon';
 
 let commandIndex = 0; //index indicates which command we're using
@@ -20,6 +21,12 @@ async function gifURL(message) {
     return "https://projectpokemon.org/images/normal-sprite/" + pokemonName + ".gif";
 }
 
+async function statsEmbed(message) {
+    commandIndex = 2; //set commandIndex to 1 for the $gifmon command
+    const embed = await getPokemonInfo(message, commandIndex);
+    return embed;
+}
+
 async function getPokemonInfo(message, index) {
     const pokemon = message.content.split(" ")[1];
     const pokeData = await getPokemon(pokemon);
@@ -35,7 +42,15 @@ async function getPokemonInfo(message, index) {
         const pokemonName = `${name}`;
         return pokemonName;
     }
-    //Data we need for $eeeeeee
+    //Data we need for $stats
+    if(index == 2) {
+        const { sprites, stats, name, id } = pokeData;
+        const embed = new MessageEmbed();
+        embed.setTitle(`${name} #${id}`);
+        embed.setThumbnail(`${sprites.front_default}`);
+        stats.forEach(stat => embed.addField(stat.stat.name, stat.base_stat));
+        return embed;
+    }
 }
 
 async function getPokemon(pokemon){
@@ -45,4 +60,4 @@ async function getPokemon(pokemon){
 
 
 //=======================EXPORTS====================//
-module.exports= { shinyURL, gifURL };
+module.exports= { shinyURL, gifURL, statsEmbed };

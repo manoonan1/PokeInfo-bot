@@ -1,7 +1,7 @@
 require ('dotenv').config();
 const { Client, MessageEmbed } = require('discord.js');
 const client = new Client();
-const { shinyURL, gifURL } = require('./utils/getPokemon');
+const { shinyURL, gifURL, statsEmbed } = require('./utils/getPokemon');
 const { getAbility } = require('./utils/getAbility');
 
 
@@ -27,14 +27,8 @@ client.on('message',async message => {
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$stats')){
-        const pokemon = message.content.split(" ")[1];
-        const pokeData = await getPokemon(pokemon);
-        const { sprites, stats, name, id } = pokeData;
-        const embed = new MessageEmbed();
-        embed.setTitle(`${name} #${id}`);
-        embed.setThumbnail(`${sprites.front_default}`);
-        stats.forEach(stat => embed.addField(stat.stat.name, stat.base_stat));
-        message.channel.send(embed);
+        const pokeData = await statsEmbed(message);
+        message.channel.send(pokeData);
     }
 });
 
