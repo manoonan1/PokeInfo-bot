@@ -1,36 +1,26 @@
 require ('dotenv').config();
 const { Client, MessageEmbed } = require('discord.js');
 const client = new Client();
-const { getPokemon } = require('./utils/getPokemon')
-const { getAbility } = require('./utils/getAbilities')
+const { getAbility } = require('./utils/getData');
+const { photoURL } = require('./utils/getData');
+const { gifURL } = require('./utils/getData');
 
 client.login(process.env.BOT_TOKEN);
 
-
 client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
-
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$shiny')){
-        const pokemon = message.content.split(" ")[1];
-        const pokeData = await getPokemon(pokemon);
-        const { id } = pokeData;
-        const photoId = `${id}`
-        const zeroPad = (num, places) => String(num).padStart(places, '0')
-        strId = zeroPad(photoId, 4)
-        message.channel.send("https://files.pokefans.net/sprites/home/" + strId + "-000-shiny.png");
+        const url = await photoURL(message);
+        message.channel.send(url);
     }
 });
 
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$gifmon')){
-        const pokemon = message.content.split(" ")[1];
-        const pokeData = await getPokemon(pokemon);
-        const { name } = pokeData;
-        const gifName = `${name}`
-        console.log(gifName)
-        message.channel.send("https://projectpokemon.org/images/normal-sprite/" + gifName + ".gif");
+        const url = await gifURL(message);
+        message.channel.send(url);
     }
 });
 
