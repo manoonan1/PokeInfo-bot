@@ -1,9 +1,9 @@
 require ('dotenv').config();
 const { Client, MessageEmbed } = require('discord.js');
 const client = new Client();
-const { getAbility } = require('./utils/getData');
-const { photoURL } = require('./utils/getData');
-const { gifURL } = require('./utils/getData');
+const { shinyURL, gifURL } = require('./utils/getPokemon');
+const { getAbility } = require('./utils/getAbility');
+
 
 client.login(process.env.BOT_TOKEN);
 
@@ -11,7 +11,7 @@ client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$shiny')){
-        const url = await photoURL(message);
+        const url = await shinyURL(message);
         message.channel.send(url);
     }
 });
