@@ -1,7 +1,6 @@
 {
   "name": "PokeInfo-bot",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +14,15 @@
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "node-fetch": "^2.6.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manoonan1/PokeInfo-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manoonan1/PokeInfo-bot/issues"
+  },
+  "homepage": "https://github.com/manoonan1/PokeInfo-bot#readme",
+  "description": ""
 }

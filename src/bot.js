@@ -1,21 +1,23 @@
 require ('dotenv').config();
 const { Client, MessageEmbed } = require('discord.js');
 const client = new Client();
-const { shinyURL, gifURL } = require('./utils/getPokemon');
+const { getShinyEmbed, gifURL } = require('./utils/getPokemon');
 const { getAbility } = require('./utils/getAbility');
-
 
 client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => console.log(`${client.user.tag} has logged in.`));
+
+//==================================$shiny command============================//
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$shiny')){
-        const url = await shinyURL(message);
-        message.channel.send(url);
+        const embed = await getShinyEmbed(message);
+        message.channel.send(embed);
     }
 });
 
+//==================================$gifmon command============================//
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$gifmon')){
@@ -24,6 +26,7 @@ client.on('message',async message => {
     }
 });
 
+//==================================$stats command============================//
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$stats')){
@@ -38,6 +41,7 @@ client.on('message',async message => {
     }
 });
 
+//==================================$ability command============================//
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$ability')){
@@ -52,6 +56,7 @@ client.on('message',async message => {
     }
 });
 
+//==================================$abmon command============================//
 client.on('message',async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase().startsWith('$abmon')){
