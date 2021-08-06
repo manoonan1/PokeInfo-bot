@@ -1,6 +1,6 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getPokemonData } = require('./getPokemon');
+const { getPokemonJSON } = require('./getPokemon');
 
 //=======================$gifmon helper functions====================//
 async function getGifEmbed(message) {
@@ -11,7 +11,7 @@ async function getGifEmbed(message) {
 }
 
 async function getGifURL(message) {
-    const pokeData = await getPokemonData(message);
+    const pokeData = await getPokemonJSON(message);
     const { name } = pokeData;
     const pokemonName = `${name}`;
     return "https://projectpokemon.org/images/normal-sprite/" + pokemonName + ".gif";
