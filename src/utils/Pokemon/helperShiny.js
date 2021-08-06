@@ -1,6 +1,6 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getPokemonData } = require('./getPokemon');
+const { getPokemonJSON } = require('./getPokemon');
 
 
 //=======================$shiny helper functions====================//
@@ -14,7 +14,7 @@ async function getShinyEmbed(message) {
 }
 
 async function getImageURLs(message, shinyFlag) {
-    const pokeData = await getPokemonData(message);
+    const pokeData = await getPokemonJSON(message);
     const { id } = pokeData;
     let strId = `${id}`;
     strId = String(strId).padStart(4, '0');

@@ -1,11 +1,11 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getPokemonData } = require('./getPokemon');
+const { getPokemonJSON } = require('./getPokemon');
 
 //=======================$stats helper functions====================//
 async function getStatsEmbed(message) {
     const embed = new MessageEmbed();
-    const pokeData = await getPokemonData(message);
+    const pokeData = await getPokemonJSON(message);
     const { sprites, stats, name, id } = pokeData;
     embed.setTitle(`${name} #${id}`);
     embed.setThumbnail(`${sprites.front_default}`);
