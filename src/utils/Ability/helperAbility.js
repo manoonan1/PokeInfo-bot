@@ -9,7 +9,8 @@ async function getAbilityEmbed(message) {
     const embed = new MessageEmbed();
     const abData = await getAbilityData(message);
     const { effect_entries, name, } = abData;
-    const effect = effect_entries[1].effect 
+    var index = effect_entries.findIndex(ind => ind.language.name === 'en');
+    const effect = effect_entries[index].effect;
     embed.setTitle(`${name}`);
     embed.addField('Effect', effect);
     return embed;
