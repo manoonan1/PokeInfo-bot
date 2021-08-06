@@ -1,6 +1,6 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getAbilityArray } = require('./helperAbility');
+const { getAbilityArray } = require('./getAbility');
 const { getPokemonData } = require('../Pokemon/getPokemon');
 
 //index comes from bots.js commandIndex. For $abmon this value should be = 4
@@ -17,8 +17,11 @@ async function getAbmonEmbed(message){
         let indicator = " - slot: " + abilities[i].slot
         if(abilities[i].is_hidden == true) indicator = ' - HIDDEN';
         embed.addField(abilities[i].ability.name + indicator, abArray[i]);
+        //embed.addField(abArray[i][0], abArray[i][1]);
     }
     return embed;
 }
+
+
 
 module.exports= { getAbmonEmbed };
