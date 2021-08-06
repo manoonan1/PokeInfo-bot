@@ -15,4 +15,4 @@ async function getAbility(ability){
 }
 
 //=======================EXPORTS====================//
-module.exports= { getAbility, getAbilityData };
+module.exports= { getAbilityData, getAbility };
