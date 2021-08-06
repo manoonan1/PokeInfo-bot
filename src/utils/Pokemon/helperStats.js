@@ -2,7 +2,6 @@ require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
 const { getPokemonData } = require('./getPokemon');
 
-//index comes from bots.js commandIndex. For $stats this value should be = 2
 //=======================$stats helper functions====================//
 async function getStatsEmbed(message) {
     const embed = new MessageEmbed();
@@ -14,4 +13,5 @@ async function getStatsEmbed(message) {
     return embed;
 }
 
-module.exports= { getStatsEmbed };
+//=======================EXPORTS====================//
+module.exports = { getStatsEmbed };

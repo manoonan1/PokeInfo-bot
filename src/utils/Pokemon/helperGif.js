@@ -2,7 +2,6 @@ require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
 const { getPokemonData } = require('./getPokemon');
 
-//index comes from bots.js commandIndex. For $gifmon this value should be = 1
 //=======================$gifmon helper functions====================//
 async function getGifEmbed(message) {
     const embed = new MessageEmbed();
@@ -18,4 +17,5 @@ async function getGifURL(message) {
     return "https://projectpokemon.org/images/normal-sprite/" + pokemonName + ".gif";
 }
 
-module.exports= { getGifEmbed };
+//=======================EXPORTS====================//
+module.exports = { getGifEmbed };

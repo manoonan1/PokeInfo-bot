@@ -14,6 +14,4 @@ async function getPokemon(pokemon){
 }
 
 //=======================EXPORTS====================//
-module.exports= { getPokemonData };
-
-
+module.exports = { getPokemonData };

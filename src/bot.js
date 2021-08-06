@@ -1,5 +1,5 @@
 require ('dotenv').config();
-const { Client, MessageEmbed } = require('discord.js');
+const { Client } = require('discord.js');
 const { getEmbed } = require('./utils/getEmbeds');
 
 const client = new Client();
@@ -17,19 +17,19 @@ client.on('message',async message => {
 
 function commandSelector(message) {
     let commandIndex = 0;
-    if(message.content.toLowerCase().startsWith('$shiny')){
+    if(message.content.toLowerCase().startsWith('$shiny')){ //Example command: $shiny bulbasaur
         commandIndex = 0;
     }
-    if(message.content.toLowerCase().startsWith('$gifmon')){
+    if(message.content.toLowerCase().startsWith('$gifmon')){ //Example command: $gifmon bulbasaur
         commandIndex = 1;
     }
-    if(message.content.toLowerCase().startsWith('$stats')){
+    if(message.content.toLowerCase().startsWith('$stats')){//Example command: $stats bulbasaur
         commandIndex = 2;
     }
-    if(message.content.toLowerCase().startsWith('$ability')){
+    if(message.content.toLowerCase().startsWith('$ability')){//Example command: $ability effect-spore
         commandIndex = 3;
     }
-    if(message.content.toLowerCase().startsWith('$abmon')){
+    if(message.content.toLowerCase().startsWith('$abmon')){//Example command: $abmon bulbasaur
         commandIndex = 4;
     }
     return commandIndex;

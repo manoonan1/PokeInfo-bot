@@ -1,6 +1,6 @@
 require ('dotenv').config();
 const { MessageEmbed, MessageAttachment } = require('discord.js');
-const { getAbility, getAbilityData, getAbilityInfo } = require('./getAbility');
+const { getAbilityInfo } = require('./getAbility');
 
 //index comes from bots.js commandIndex. For $ability this value should be = 3
 //=======================$ability helper functions====================//
@@ -14,8 +14,5 @@ async function getAbilityEmbed(message) {
     return embed;
 }
 
-
-
-
-
-module.exports= { getAbilityEmbed };
+//=======================EXPORTS====================//
+module.exports = { getAbilityEmbed };
