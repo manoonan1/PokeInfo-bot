@@ -1,6 +1,6 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getPokemonJSON } = require('./getPokemon');
+const { getPokemonJSON } = require('./GetPokemon');
 
 
 //=======================$shiny helper functions====================//
