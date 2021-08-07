@@ -1,9 +1,11 @@
 const { MessageEmbed } = require('discord.js');
-const { getShinyEmbed } = require('./Pokemon/helperShiny');
-const { getGifEmbed } = require('./Pokemon/helperGif');
-const { getStatsEmbed } = require('./Pokemon/helperStats');
-const { getAbilityEmbed } = require('./Ability/helperAbility')
-const { getAbmonEmbed } = require('./Ability/helperAbmon')
+const { getShinyEmbed } = require('./Pokemon/HelperShiny');
+const { getGifEmbed } = require('./Pokemon/HelperGif');
+const { getStatsEmbed } = require('./Pokemon/HelperStats');
+const { getAbilityEmbed } = require('./Ability/HelperAbility')
+const { getAbmonEmbed } = require('./Ability/HelperAbmon');
+const { getTypeEmbed } = require('./Type/HelperType');
+const { getVersusEmbed } = require('./Type/HelperVersus');
 
 
 async function getEmbed(message, index) {
@@ -22,6 +24,12 @@ async function getEmbed(message, index) {
     }
     if (index == 4) {
         embed = await getAbmonEmbed(message);
+    }
+    if (index == 5) {
+        embed = await getTypeEmbed(message);
+    }
+    if (index == 6) {
+        embed = await getVersusEmbed(message);
     }
     return embed;
 }

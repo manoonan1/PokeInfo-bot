@@ -1,9 +1,8 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getAbilityInfo } = require('./getAbility');
-const { getPokemonJSON } = require('../Pokemon/getPokemon');
+const { getAbilityInfo } = require('./GetAbility');
+const { getPokemonJSON } = require('../Pokemon/GetPokemon');
 
-//index comes from bots.js commandIndex. For $abmon this value should be = 4
 //=======================$abmon helper functions====================//
 
 async function getAbmonEmbed(message){

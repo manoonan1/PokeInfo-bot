@@ -1,6 +1,6 @@
 require ('dotenv').config();
 const { Client } = require('discord.js');
-const { getEmbed } = require('./utils/getEmbeds');
+const { getEmbed } = require('./utils/GetEmbed');
 
 const client = new Client();
 client.login(process.env.BOT_TOKEN);
@@ -11,12 +11,13 @@ client.on('message',async message => {
     if(message.author.bot) return;
     if(!message.content.toLowerCase().startsWith('$')) return;
     const commandIndex = commandSelector(message);
+    //console.log('Command index is ' + commandIndex);
     const embed = await getEmbed(message, commandIndex);
     message.channel.send(embed);
 });
 
 function commandSelector(message) {
-    let commandIndex = 0;
+    var commandIndex;
     if(message.content.toLowerCase().startsWith('$shiny')){ //Example command: $shiny bulbasaur
         commandIndex = 0;
     }
@@ -31,6 +32,12 @@ function commandSelector(message) {
     }
     if(message.content.toLowerCase().startsWith('$abmon')){//Example command: $abmon bulbasaur
         commandIndex = 4;
+    }
+    if(message.content.toLowerCase().startsWith('$type')){//Example command: $typeAd grass
+        commandIndex = 5;
+    }
+    if(message.content.toLowerCase().startsWith('$vs')){//Example command: $typeAd grass
+        commandIndex = 6;
     }
     return commandIndex;
 }
