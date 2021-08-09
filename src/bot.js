@@ -33,10 +33,10 @@ function commandSelector(message) {
     if(message.content.toLowerCase().startsWith('$abmon')){//Example command: $abmon bulbasaur
         commandIndex = 4;
     }
-    if(message.content.toLowerCase().startsWith('$type')){//Example command: $typeAd grass
+    if(message.content.toLowerCase().startsWith('$type')){//Example command: $type grass
         commandIndex = 5;
     }
-    if(message.content.toLowerCase().startsWith('$vs')){//Example command: $typeAd grass
+    if(message.content.toLowerCase().startsWith('$vs')){//Example command: $vs grass growlithe
         commandIndex = 6;
     }
     return commandIndex;
