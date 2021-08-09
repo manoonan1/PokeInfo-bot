@@ -1,0 +1,780 @@
+{    
+    "pokemon": [
+        {
+        "name": "deoxys-attack",
+        "image": "https://files.pokefans.net/sprites/home/0386-001-shiny.png"
+        },
+        {
+        "name": "deoxys-defense",
+        "image": "https://files.pokefans.net/sprites/home/0386-002-shiny.png"
+        },
+        {
+        "name": "deoxys-speed",
+        "image": "https://files.pokefans.net/sprites/home/0386-003-shiny.png"
+        },
+        {
+        "name": "wormadam-sandy",
+        "image": "https://files.pokefans.net/sprites/home/0413-001-shiny.png"
+        },
+        {
+        "name": "wormadam-trash",
+        "image": "https://files.pokefans.net/sprites/home/0413-002-shiny.png"
+        },
+        {
+        "name": "cherrim-sunshine",
+        "image": "https://files.pokefans.net/sprites/home/0421-001-shiny.png"
+        },
+        {
+        "name": "shellos-east",
+        "image": "https://files.pokefans.net/sprites/home/0422-001-shiny.png"
+        },
+        {
+        "name": "gastrodon-east",
+        "image": "https://files.pokefans.net/sprites/home/0423-001-shiny.png"
+        },        
+        {
+        "name": "shaymin-sky",
+        "image": "https://files.pokefans.net/sprites/home/0492-001-shiny.png"
+        },
+        {
+        "name": "giratina-origin",
+        "image": "https://files.pokefans.net/sprites/home/0487-001-shiny.png"
+        },
+        {
+        "name": "rotom-heat",
+        "image": "https://files.pokefans.net/sprites/home/0479-001-shiny.png"
+        },
+        {
+        "name": "rotom-wash",
+        "image": "https://files.pokefans.net/sprites/home/0479-002-shiny.png"
+        },
+        {
+        "name": "rotom-frost",
+        "image": "https://files.pokefans.net/sprites/home/0479-003-shiny.png"
+        },
+        {
+        "name": "rotom-fan",
+        "image": "https://files.pokefans.net/sprites/home/0479-004-shiny.png"
+        },
+        {
+        "name": "rotom-mow",
+        "image": "https://files.pokefans.net/sprites/home/0479-005-shiny.png"
+        },
+        {
+        "name": "castform-sunny",
+        "image": "https://files.pokefans.net/sprites/home/0351-001-shiny.png"
+        },
+        {
+        "name": "castform-rainy",
+        "image": "https://files.pokefans.net/sprites/home/0351-002-shiny.png/"
+        },
+        {
+        "name": "castform-snowy",
+        "image": "https://files.pokefans.net/sprites/home/0351-003-shiny.png"
+        },
+        {
+        "name": "basculin-blue-striped",
+        "image": "https://files.pokefans.net/sprites/home/0550-001-shiny.png"
+        },
+        {
+        "name": "deerling-summer",
+        "image": "https://files.pokefans.net/sprites/home/0585-001-shiny.png"
+        },
+        {
+        "name": "deerling-autumn",
+        "image": "https://files.pokefans.net/sprites/home/0585-002-shiny.png"
+        },
+        {
+        "name": "deerling-winter",
+        "image": "https://files.pokefans.net/sprites/home/0585-003-shiny.png"
+        },
+        {
+        "name": "sawsbuck-summer",
+        "image": "https://files.pokefans.net/sprites/home/0586-001-shiny.png"
+        },
+        {
+        "name": "sawsbuck-autumn",
+        "image": "https://files.pokefans.net/sprites/home/0586-002-shiny.png"
+        },
+        {
+        "name": "sawsbuck-winter",
+        "image": "https://files.pokefans.net/sprites/home/0586-003-shiny.png"
+        },
+        {
+        "name": "darmanitan-zen",
+        "image": "https://files.pokefans.net/sprites/home/0555-001-shiny.png"
+        },
+        {
+        "name": "meloetta-pirouette",
+        "image": "https://files.pokefans.net/sprites/home/0648-001-shiny.png"
+        },
+        {
+        "name": "tornadus-therian",
+        "image": "https://files.pokefans.net/sprites/home/0641-001-shiny.png"
+        },
+        {
+        "name": "thundurus-therian",
+        "image": "https://files.pokefans.net/sprites/home/0642-001-shiny.png"
+        },
+        {
+        "name": "landorus-therian",
+        "image": "https://files.pokefans.net/sprites/home/0645-001-shiny.png"
+        },
+        {
+        "name": "kyurem-black",
+        "image": "https://files.pokefans.net/sprites/home/0646-002-shiny.png"
+        },
+        {
+        "name": "kyurem-white",
+        "image": "https://files.pokefans.net/sprites/home/0646-001-shiny.png"
+        },
+        {
+        "name": "keldeo-resolute",
+        "image": "https://files.pokefans.net/sprites/home/0647-001-shiny.png"
+        },
+        {
+        "name": "unfezant-male",
+        "image": "https://files.pokefans.net/sprites/home/poke_capture_0521_000_md_n_00000000_f_r.png"
+        },
+        {
+        "name": "frillish-male",
+        "image": "https://files.pokefans.net/sprites/home/poke_capture_0592_000_md_n_00000000_f_r.png"
+        },
+        {
+        "name": "jellicent-male",
+        "image": "https://files.pokefans.net/sprites/home/poke_capture_0593_000_md_n_00000000_f_r.png"
+        },
+        {
+        "name": "meowstic-female",
+        "image": "https://files.pokefans.net/sprites/home/0678-001-shiny.png"
+        },
+        {
+        "name": "pyroar-female",
+        "image": "https://files.pokefans.net/sprites/home/0668-000-01-shiny.png"
+        },
+        {
+        "name": "aegislash-blade",
+        "image": "https://files.pokefans.net/sprites/home/0681-001-shiny.png"
+        },
+        {
+        "name": "pumpkaboo-small",
+        "image": "https://files.pokefans.net/sprites/home/0710-001-shiny.png"
+        },
+        {
+        "name": "pumpkaboo-large",
+        "image": "https://files.pokefans.net/sprites/home/0710-002-shiny.png"
+        },
+        {
+        "name": "pumpkaboo-super",
+        "image": "https://files.pokefans.net/sprites/home/0710-003-shiny.png"
+        },
+        {
+        "name": "gourgeist-small",
+        "image": "https://files.pokefans.net/sprites/home/0711-001-shiny.png"
+        },
+        {
+        "name": "gourgeist-large",
+        "image": "https://files.pokefans.net/sprites/home/0711-002-shiny.png"
+        },
+        {
+        "name": "gourgeist-super",
+        "image": "https://files.pokefans.net/sprites/home/0711-003-shiny.png"
+        },
+        {
+        "name": "venusaur-mega",
+        "image": "https://files.pokefans.net/sprites/home/0003-001-shiny.png"
+        },
+        {
+        "name": "charizard-mega-x",
+        "image": "https://files.pokefans.net/sprites/home/0006-001-shiny.png"
+        },
+        {
+        "name": "charizard-mega-y",
+        "image": "https://files.pokefans.net/sprites/home/0006-002-shiny.png"
+        },
+        {
+        "name": "blastoise-mega",
+        "image": "https://files.pokefans.net/sprites/home/0009-001-shiny.png"
+        },
+        {
+        "name": "alakazam-mega",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0065_001_mf_n_00000000_f_r.png"
+        },
+        {
+        "name": "gengar-mega",
+        "image": "https://files.pokefans.net/sprites/home/0094-001-shiny.png"
+        },
+        {
+        "name": "kangaskhan-mega",
+        "image": "https://files.pokefans.net/sprites/home/0115-001-shiny.png"
+        },
+        {
+        "name": "pinsir-mega",
+        "image": "https://files.pokefans.net/sprites/home/0127-001-shiny.png"
+        },
+        {
+        "name": "gyarados-mega",
+        "image": "https://files.pokefans.net/sprites/home/0130-001-shiny.png"
+        },
+        {
+        "name": "aerodactyl-mega",
+        "image": "https://files.pokefans.net/sprites/home/0142-001-shiny.png"
+        },
+        {
+        "name": "mewtwo-mega-x",
+        "image": "https://files.pokefans.net/sprites/home/0150-001-shiny.png"
+        },
+        {
+        "name": "mewtwo-mega-y",
+        "image": "https://files.pokefans.net/sprites/home/0150-002-shiny.png"
+        },
+        {
+        "name": "ampharos-mega",
+        "image": "https://files.pokefans.net/sprites/home/0181-001-shiny.png"
+        },
+        {
+        "name": "scizor-mega",
+        "image": "https://files.pokefans.net/sprites/home/0212-001-shiny.png"
+        },
+        {
+        "name": "heracross-mega",
+        "image": "https://files.pokefans.net/sprites/home/0214-001-shiny.png"
+        },
+        {
+        "name": "houndoom-mega",
+        "image": "https://files.pokefans.net/sprites/home/0229-001-shiny.png"
+        },
+        {
+        "name": "tyranitar-mega",
+        "image": "https://files.pokefans.net/sprites/home/0248-001-shiny.png"
+        },
+        {
+        "name": "blaziken-mega",
+        "image": "https://files.pokefans.net/sprites/home/0257-001-shiny.png"
+        },
+        {
+        "name": "gardevoir-mega",
+        "image": "https://files.pokefans.net/sprites/home/0282-001-shiny.png"
+        },
+        {
+        "name": "mawile-mega",
+        "image": "https://files.pokefans.net/sprites/home/0303-001-shiny.png"
+        },
+        {
+        "name": "aggron-mega",
+        "image": "https://files.pokefans.net/sprites/home/0306-001-shiny.png"
+        },
+        {
+        "name": "medicham-mega",
+        "image": "https://files.pokefans.net/sprites/home/0308-001-shiny.png"
+        },
+        {
+        "name": "manectric-mega",
+        "image": "https://files.pokefans.net/sprites/home/0310-001-shiny.png"
+        },
+        {
+        "name": "banette-mega",
+        "image": "https://files.pokefans.net/sprites/home/0354-001-shiny.png"
+        },
+        {
+        "name": "absol-mega",
+        "image": "https://files.pokefans.net/sprites/home/0359-001-shiny.png"
+        },
+        {
+        "name": "garchomp-mega",
+        "image": "https://files.pokefans.net/sprites/home/0445-001-shiny.png"
+        },
+        {
+        "name": "lucario-mega",
+        "image": "https://files.pokefans.net/sprites/home/0448-001-shiny.png"
+        },
+        {
+        "name": "abomasnow-mega",
+        "image": "https://files.pokefans.net/sprites/home/0460-001-shiny.png"
+        },
+        {
+        "name": "floette-eternal",
+        "image": "https://archives.bulbagarden.net/media/upload/4/46/Spr_7s_670E_s.png"
+        },
+        {
+        "name": "latias-mega",
+        "image": "https://files.pokefans.net/sprites/home/0380-001-shiny.png"
+        },
+        {
+        "name": "latios-mega",
+        "image": "https://files.pokefans.net/sprites/home/0381-001-shiny.png"
+        },
+        {
+        "name": "swampert-mega",
+        "image": "https://files.pokefans.net/sprites/home/0260-001-shiny.png"
+        },
+        {
+        "name": "sceptile-mega",
+        "image": "https://files.pokefans.net/sprites/home/0254-001-shiny.png"
+        },
+        {
+        "name": "sableye-mega",
+        "image": "https://files.pokefans.net/sprites/home/0302-001-shiny.png"
+        },
+        {
+        "name": "altaria-mega",
+        "image": "https://files.pokefans.net/sprites/home/0334-001-shiny.png"
+        },
+        {
+        "name": "gallade-mega",
+        "image": "https://files.pokefans.net/sprites/home/0475-001-shiny.png"
+        },
+        {
+        "name": "audino-mega",
+        "image": "https://files.pokefans.net/sprites/home/0531-001-shiny.png"
+        },
+        {
+        "name": "sharpedo-mega",
+        "image": "https://files.pokefans.net/sprites/home/0319-001-shiny.png"
+        },
+        {
+        "name": "slowbro-mega",
+        "image": "https://files.pokefans.net/sprites/home/0080-001-shiny.png"
+        },
+        {
+        "name": "steelix-mega",
+        "image": "https://files.pokefans.net/sprites/home/0208-001-shiny.png"
+        },
+        {
+        "name": "pidgeot-mega",
+        "image": "https://files.pokefans.net/sprites/home/0018-001-shiny.png"
+        },
+        {
+        "name": "glalie-mega",
+        "image": "https://files.pokefans.net/sprites/home/0362-001-shiny.png"
+        },
+        {
+        "name": "diancie-mega",
+        "image": "https://files.pokefans.net/sprites/home/0719-001-shiny.png"
+        },
+        {
+        "name": "metagross-mega",
+        "image": "https://files.pokefans.net/sprites/home/0376-001-shiny.png"
+        },
+        {
+        "name": "kyogre-primal",
+        "image": "https://files.pokefans.net/sprites/home/0382-001-shiny.png"
+        },
+        {
+        "name": "groudon-primal",
+        "image": "https://files.pokefans.net/sprites/home/0383-001-shiny.png"
+        },
+        {
+        "name": "rayquaza-mega",
+        "image": "https://files.pokefans.net/sprites/home/0384-001-shiny.png"
+        },
+        {
+        "name": "hoopa-unbound",
+        "image": "https://files.pokefans.net/sprites/home/0720-001-shiny.png"
+        },
+        {
+        "name": "camerupt-mega",
+        "image": "https://files.pokefans.net/sprites/home/0323-001-shiny.png"
+        },
+        {
+        "name": "lopunny-mega",
+        "image": "https://files.pokefans.net/sprites/home/0428-001-shiny.png"
+        },
+        {
+        "name": "salamence-mega",
+        "image": "https://files.pokefans.net/sprites/home/0373-001-shiny.png"
+        },
+        {
+        "name": "beedrill-mega",
+        "image": "https://files.pokefans.net/sprites/home/0015-001-shiny.png"
+        },
+        {
+        "name": "rattata-alola",
+        "image": "https://files.pokefans.net/sprites/home/0019-001-shiny.png"
+        },
+        {
+        "name": "raticate-alola",
+        "image": "https://files.pokefans.net/sprites/home/0020-001-shiny.png"
+        },
+        {
+        "name": "raichu-alola",
+        "image": "https://files.pokefans.net/sprites/home/0026-001-shiny.png"
+        },
+        {
+        "name": "sandshrew-alola",
+        "image": "https://files.pokefans.net/sprites/home/0027-001-shiny.png"
+        },
+        {
+        "name": "sandslash-alola",
+        "image": "https://files.pokefans.net/sprites/home/0028-001-shiny.png"
+        },
+        {
+        "name": "vulpix-alola",
+        "image": "https://files.pokefans.net/sprites/home/0037-001-shiny.png"
+        },
+        {
+        "name": "ninetales-alola",
+        "image": "https://files.pokefans.net/sprites/home/0038-001-shiny.png"
+        },
+        {
+        "name": "diglett-alola",
+        "image": "https://files.pokefans.net/sprites/home/0050-001-shiny.png"
+        },
+        {
+        "name": "dugtrio-alola",
+        "image": "https://files.pokefans.net/sprites/home/0051-001-shiny.png"
+        },
+        {
+        "name": "meowth-alola",
+        "image": "https://files.pokefans.net/sprites/home/0052-001-shiny.png"
+        },
+        {
+        "name": "persian-alola",
+        "image": "https://files.pokefans.net/sprites/home/0053-001-shiny.png"
+        },
+        {
+        "name": "geodude-alola",
+        "image": "https://files.pokefans.net/sprites/home/0074-001-shiny.png"
+        },
+        {
+        "name": "graveler-alola",
+        "image": "https://files.pokefans.net/sprites/home/0074-002-shiny.png"
+        },
+        {
+        "name": "golem-alola",
+        "image": "https://files.pokefans.net/sprites/home/0074-003-shiny.png"
+        },
+        {
+        "name": "grimer-alola",
+        "image": "https://files.pokefans.net/sprites/home/0088-001-shiny.png"
+        },
+        {
+        "name": "muk-alola",
+        "image": "https://files.pokefans.net/sprites/home/0089-001-shiny.png"
+        },
+        {
+        "name": "exeggutor-alola",
+        "image": "https://files.pokefans.net/sprites/home/0103-001-shiny.png"
+        },
+        {
+        "name": "marowak-alola",
+        "image": "https://files.pokefans.net/sprites/home/0105-001-shiny.png"
+        },
+        {
+        "name": "greninja-battle-bond",
+        "image": "https://cdn2.bulbagarden.net/upload/8/8d/Spr_7s_658A_s.png"
+        },
+        {
+        "name": "greninja-ash",
+        "image": "https://files.pokefans.net/sprites/home/0658-002-shiny.png"
+        },
+        {
+        "name": "zygarde-10",
+        "image": "https://files.pokefans.net/sprites/home/0718-001-shiny.png"
+        },
+        {
+        "name": "zygarde-50",
+        "image": "https://files.pokefans.net/sprites/home/0718-000-shiny.png"
+        },
+        {
+        "name": "zygarde-complete",
+        "image": "https://files.pokefans.net/sprites/home/0718-004-shiny.png"
+        },
+        {
+        "name": "oricorio-pom-pom",
+        "image": "https://files.pokefans.net/sprites/home/0741-001-shiny.png"
+        },
+        {
+        "name": "oricorio-pau",
+        "image": "https://files.pokefans.net/sprites/home/0741-002-shiny.png"
+        },
+        {
+        "name": "oricorio-sensu",
+        "image": "https://files.pokefans.net/sprites/home/0741-003-shiny.png"
+        },
+        {
+        "name": "lycanroc-midnight",
+        "image": "https://files.pokefans.net/sprites/home/0745-001-shiny.png"
+        },
+        {
+        "name": "wishiwashi-school",
+        "image": "https://files.pokefans.net/sprites/home/0746-001-shiny.png"
+        },
+        {
+        "name": "minior",
+        "image": "https://files.pokefans.net/sprites/home/0774-007-shiny.png"
+        },
+        {
+        "name": "mimikyu-busted",
+        "image": "https://files.pokefans.net/sprites/home/0778-001-shiny.png"
+        },
+        {
+        "name": "magearna-original",
+        "image": "https://files.pokefans.net/sprites/home/0801-001-shiny.png"
+        },
+        {
+        "name": "lycanroc-dusk",
+        "image": "https://files.pokefans.net/sprites/home/0745-002-shiny.png"
+        },
+        {
+        "name": "necrozma-dusk",
+        "image": "https://files.pokefans.net/sprites/home/0800-001-shiny.png"
+        },
+        {
+        "name": "necrozma-dawn",
+        "image": "https://files.pokefans.net/sprites/home/0800-002-shiny.png"
+        },
+        {
+        "name": "necrozma-ultra",
+        "image": "https://files.pokefans.net/sprites/home/0800-003-shiny.png"
+        },
+        {
+        "name": "meowth-galar",
+        "image": "https://files.pokefans.net/sprites/home/0052-002-shiny.png"
+        },
+        {
+        "name": "ponyta-galar",
+        "image": "https://files.pokefans.net/sprites/home/0077-001-shiny.png"
+        },
+        {
+        "name": "rapidash-galar",
+        "image": "https://files.pokefans.net/sprites/home/0078-001-shiny.png"
+        },
+        {
+        "name": "slowpoke-galar",
+        "image": "https://files.pokefans.net/sprites/home/0079-001-shiny.png"
+        },
+        {
+        "name": "slowbro-galar",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0080_002_mf_n_00000000_f_r.png"
+        },
+        {
+        "name": "farfetchd-galar",
+        "image": "https://files.pokefans.net/sprites/home/0083-001-shiny.png"
+        },
+        {
+        "name": "weezing-galar",
+        "image": "https://files.pokefans.net/sprites/home/0110-001-shiny.png"
+        },
+        {
+        "name": "mr-mime-galar",
+        "image": "https://files.pokefans.net/sprites/home/0122-001-shiny.png"
+        },
+        {
+        "name": "articuno-galar",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0144_001_uk_n_00000000_f_r.png"
+        },
+        {
+        "name": "zapdos-galar",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0145_001_uk_n_00000000_f_r.png"
+        },
+        {
+        "name": "moltres-galar",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0146_001_uk_n_00000000_f_r.png"
+        },
+        {
+        "name": "slowking-galar",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0199_001_mf_n_00000000_f_r.png"
+        },
+        {
+        "name": "corsola-galar",
+        "image": "https://files.pokefans.net/sprites/home/0222-001-shiny.png"
+        },
+        {
+        "name": "zigzagoon-galar",
+        "image": "https://files.pokefans.net/sprites/home/0263-001-shiny.png"
+        },
+        {
+        "name": "linoone-galar",
+        "image": "https://files.pokefans.net/sprites/home/0263-001-shiny.png"
+        },
+        {
+        "name": "darumaka-galar",
+        "image": "https://files.pokefans.net/sprites/home/0554-001-shiny.png"
+        },
+        {
+        "name": "darmanitan-galar",
+        "image": "https://files.pokefans.net/sprites/home/0555-002-shiny.png"
+        },
+        {
+        "name": "darmanitan-zen-galar",
+        "image": "https://files.pokefans.net/sprites/home/0555-003-shiny.png"
+        },
+        {
+        "name": "yamask-galar",
+        "image": "https://files.pokefans.net/sprites/home/0562-001-shiny.png"
+        },
+        {
+        "name": "stunfisk-galar",
+        "image": "https://files.pokefans.net/sprites/home/0618-001-shiny.png"
+        },
+        {
+        "name": "toxtricity-low-key",
+        "image": "https://files.pokefans.net/sprites/home/0849-001-shiny.png"
+        },
+        {
+        "name": "eiscue-noice",
+        "image": "https://files.pokefans.net/sprites/home/0875-001-shiny.png"
+        },
+        {
+        "name": "indeedee-female",
+        "image": "https://files.pokefans.net/sprites/home/0876-001-shiny.png"
+        },
+        {
+        "name": "zacian-crowned",
+        "image": "https://files.pokefans.net/sprites/home/0888-001-shiny.png"
+        },
+        {
+        "name": "zamazenta-crowned",
+        "image": "https://files.pokefans.net/sprites/home/0889-001-shiny.png"
+        },
+        {
+        "name": "urshifu-rapid-strike",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0892_001_mf_n_00000000_f_r.png"
+        },
+        {
+        "name": "calyrex-ice-rider",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0898_001_uk_n_00000000_f_r.png"
+        },
+        {
+        "name": "calyrex-shadow-rider",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0898_002_uk_n_00000000_f_r.png"
+        },
+        {
+        "name": "venusaur-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0003_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "charizard-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0006-000-giga-shiny.png"
+        },
+        {
+        "name": "blastoise-gmax",
+        "image": "https://cdn2.bulbagarden.net/upload/f/fe/HOME009Gi_s.png"
+        },
+        {
+        "name": "butterfree-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0012_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "pikachu-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0025_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "meowth-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0052_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "machamp-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0068_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "gengar-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0094_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "kingler-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0099_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "lapras-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0131_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "eevee-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0133_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "snorlax-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0143_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "garbodor-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0569-000-giga-shiny.png"
+        },
+        {
+        "name": "melmetal-gmax",
+        "image": "https://cdn2.bulbagarden.net/upload/1/1f/HOME809Gi_s.png"
+        },
+        {
+        "name": "rillaboom-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0812_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "cinderace-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0815_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "inteleon-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0818_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "corviknight-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0823-000-giga-shiny.png"
+        },
+        {
+        "name": "orbeetle-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0826-000-giga-shiny.png"
+        },
+        {
+        "name": "drednaw-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0834-000-giga-shiny.png"
+        },
+        {
+        "name": "coalossal-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0839-000-giga-shiny.png"
+        },
+        {
+        "name": "flapple-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0841-000-giga-shiny.png"
+        },
+        {
+        "name": "appletun-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0841-000-giga-shiny.png"
+        },
+        {
+        "name": "sandaconda-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0844-000-giga-shiny.png"
+        },
+        {
+        "name": "toxtricity-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0849-000-giga-shiny.png"
+        },
+        {
+        "name": "centiskorch-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0851-000-giga-shiny.png"
+        },
+        {
+        "name": "hatterene-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0858-000-giga-shiny.png"
+        },
+        {
+        "name": "grimmsnarl-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0861-000-giga-shiny.png"
+        },
+        {
+        "name": "alcremie-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0869-000-giga-shiny.png"
+        },
+        {
+        "name": "copperajah-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0879-000-giga-shiny.png"
+        },
+        {
+        "name": "duraludon-gmax",
+        "image": "https://files.pokefans.net/sprites/home/0884-000-giga-shiny.png"
+        },
+        {
+        "name": "eternatus-eternamax",
+        "image": "https://files.pokefans.net/sprites/home/0890-001-shiny.png"
+        },
+        {
+        "name": "urshifu-single-strike-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0892_000_mf_g_00000000_f_r.png"
+        },
+        {
+        "name": "urshifu-rapid-strike-gmax",
+        "image": "https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0892_001_mf_g_00000000_f_r.png"
+        }
+    ]
+}
