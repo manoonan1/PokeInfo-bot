@@ -12,9 +12,10 @@ async function getAbilityInfo(message) { //returns an array with abilityName at 
 }
 
 async function getAbilityJSON(message) {
-    const ability = message.content.split(" ")[1];
+    const ability = message.content.toLowerCase().split(" ")[1];
     let response = await fetch(`${ABILITY_URL}/${ability}`);
     const abData = response.json(); 
+    console.log(await abData);
     return abData;
 }
 

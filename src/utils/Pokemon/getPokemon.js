@@ -4,9 +4,10 @@ const  POKEMON_URL = 'https://pokeapi.co/api/v2/pokemon';
 
 //=======================$general helper functions====================//
 async function getPokemonJSON(message) {
-    let pokemon = message.content.split(" ")[1];
-    const response = await fetch(`${POKEMON_URL}/${pokemon}`);
-    let pokemonData = response.json();
+    const pokemon = message.content.toLowerCase().split(" ")[1];
+    let response = await fetch(`${POKEMON_URL}/${pokemon}`);
+    const pokemonData = response.json();
+    console.log(await pokemonData);
     return pokemonData;
 }
 
