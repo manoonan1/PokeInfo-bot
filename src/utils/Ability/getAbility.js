@@ -6,7 +6,14 @@ async function getAbilityInfo(message) { //returns an array with abilityName at 
     const abData = await getAbilityJSON(message);
     const { effect_entries, name } = abData;
     var index = effect_entries.findIndex(ind => ind.language.name === 'en');
-    const effect = effect_entries[index].effect; //effect_entries[index] needs be used to grab appropriate language
+    var effect;
+    try{
+        effect = effect_entries[index].effect;
+    }
+    catch(TypeError){
+        effect = abData.flavor_text_entries[0].flavor_text;
+    }
+     //effect_entries[index] needs be used to grab appropriate language
     const abilityInfo = [`${name}`, effect];
     return abilityInfo;
 }
@@ -15,7 +22,6 @@ async function getAbilityJSON(message) {
     const ability = message.content.toLowerCase().split(" ")[1];
     let response = await fetch(`${ABILITY_URL}/${ability}`);
     const abData = response.json(); 
-    console.log(await abData);
     return abData;
 }
 
