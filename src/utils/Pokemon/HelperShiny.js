@@ -17,7 +17,7 @@ async function getShinyEmbed(message) {
 async function getImageURLs(message, shinyFlag) {
     //variant boolean check
     if(isVariant(message.content.toLowerCase().split(" ")[1]) == true){
-        variantData = readJSON("src/utils/Pokemon/pokemonVariants.json");
+        variantData = readJSON("src/utils/Pokemon/PokemonVariants.json");
         index = variantData.pokemon.findIndex(ind => ind.name === message.content.toLowerCase().split(" ")[1]);
         if(shinyFlag == 0){
             return variantData.pokemon[index].image.replace("-shiny","");        
