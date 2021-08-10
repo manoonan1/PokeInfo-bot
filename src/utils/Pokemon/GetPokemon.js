@@ -11,7 +11,7 @@ async function getPokemonJSON(message) {
 }
 
 function isVariant(pokemon){
-    var variantJSON = readJSON("src/utils/Pokemon/pokemonVariants.json");
+    var variantJSON = readJSON("src/utils/Pokemon/PokemonVariants.json");
     for (let i = 0; i < variantJSON.pokemon.length; i++){
         if(variantJSON.pokemon[i].name == pokemon){
             return true;
