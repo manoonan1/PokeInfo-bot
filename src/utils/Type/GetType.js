@@ -11,8 +11,7 @@ function getDamageArray(damageAdOrDis) {
     return damageArray;
 }
 
-async function getTypeJSON(message) {
-    const type = message.content.toLowerCase().split(" ")[1];
+async function getTypeJSON(type) {
     let response = await fetch(`${TYPE_URL}/${type}`);
     const typeData = response.json();
     return typeData;

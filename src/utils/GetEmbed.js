@@ -1,35 +1,37 @@
 const { MessageEmbed } = require('discord.js');
-const { getShinyEmbed } = require('./Pokemon/HelperShiny');
-const { getGifEmbed } = require('./Pokemon/HelperGif');
-const { getStatsEmbed } = require('./Pokemon/HelperStats');
-const { getAbilityEmbed } = require('./Ability/HelperAbility')
-const { getAbmonEmbed } = require('./Ability/HelperAbmon');
-const { getTypeEmbed } = require('./Type/HelperType');
-const { getVersusEmbed } = require('./Type/HelperVersus');
+const { getShinyEmbed } = require('./Pokemon/CreateShinyEmbed');
+const { getGifEmbed } = require('./Pokemon/CreateGifmonEmbed');
+const { getStatsEmbed } = require('./Pokemon/CreateStatsEmbed');
+const { getAbilityEmbed } = require('./Ability/CreateAbilityEmbed')
+const { getAbmonEmbed } = require('./Ability/CreateAbmonEmbed');
+const { getTypeEmbed } = require('./Type/CreateTypeEmbed');
+const { getVersusEmbed } = require('./Type/CreateVsEmbed');
 
 
-async function getEmbed(message, index) {
+async function getEmbed(command, content) {
     let embed = new MessageEmbed();
-    if (index == 0) {
-        embed = await getShinyEmbed(message);
-    }
-    if (index == 1) {
-        embed = await getGifEmbed(message);
-    }
-    if (index == 2) {
-        embed = await getStatsEmbed(message);
-    }
-    if (index == 3) {
-        embed = await getAbilityEmbed(message);
-    }
-    if (index == 4) {
-        embed = await getAbmonEmbed(message);
-    }
-    if (index == 5) {
-        embed = await getTypeEmbed(message);
-    }
-    if (index == 6) {
-        embed = await getVersusEmbed(message);
+    switch(command) {
+        case '$shiny': //Example command: $shiny bulbasaur
+            embed = await getShinyEmbed(content);
+            break;
+        case '$gifmon': //Example command: $gifmon bulbasaur
+            embed = await getGifEmbed(content);
+            break;
+        case '$stats': //Example command: $stats bulbasaur
+            embed = await getStatsEmbed(content);
+            break;
+        case '$ability': //Example command: $ability effect-spore
+            embed = await getAbilityEmbed(content);
+            break;
+        case '$abmon': //Example command: $abmon bulbasaur
+            embed = await getAbmonEmbed(content);
+            break;
+        case '$type': //Example command: $type grass
+            embed = await getTypeEmbed(content);
+            break;
+        case '$vs': //Example command $type grass vs charizard
+            embed = await getVersusEmbed(content);
+            break;
     }
     return embed;
 }

@@ -5,20 +5,20 @@ const { getPokemonJSON, isVariant, readJSON } = require('./GetPokemon');
 
 
 //=======================$shiny helper functions====================//
-async function getShinyEmbed(message) {
-    const normalUrl = await getImageURLs(message, 0);
-    const shinyUrl = await getImageURLs(message, 1);
+async function getShinyEmbed(pokemon) {
+    const normalUrl = await getImageURLs(pokemon, 0);
+    const shinyUrl = await getImageURLs(pokemon, 1);
     const embed = new MessageEmbed();
     embed.setThumbnail(normalUrl);
     embed.setImage(shinyUrl);
     return embed;
 }
 
-async function getImageURLs(message, shinyFlag) {
+async function getImageURLs(pokemon, shinyFlag) {
     //variant boolean check
-    if(isVariant(message.content.toLowerCase().split(" ")[1]) == true){
+    if(isVariant(pokemon == true)){
         variantData = readJSON("src/utils/Pokemon/PokemonVariants.json");
-        index = variantData.pokemon.findIndex(ind => ind.name === message.content.toLowerCase().split(" ")[1]);
+        index = variantData.pokemon.findIndex(ind => ind.name === pokemon);
         if(shinyFlag == 0){
             return variantData.pokemon[index].image.replace("-shiny","");        
         }
@@ -26,7 +26,7 @@ async function getImageURLs(message, shinyFlag) {
             return variantData.pokemon[index].image;
         }
     }
-    const pokeData = await getPokemonJSON(message);
+    const pokeData = await getPokemonJSON(pokemon);
     const { id } = pokeData;
     let strId = `${id}`;
     strId = String(strId).padStart(4, '0');

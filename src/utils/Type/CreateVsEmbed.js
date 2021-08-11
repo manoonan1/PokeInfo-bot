@@ -1,27 +1,24 @@
 require ('dotenv').config();
 const { MessageEmbed } = require('discord.js');
-const { getTypeJSON } = require('./GetType');
+const { getTypeJSON, getDamageArray } = require('./GetType');
 const { getPokemonJSON } = require('../Pokemon/GetPokemon');
-const { getDamageArray } = require('./GetType');
 
-async function getVersusEmbed(message) {
+async function getVersusEmbed(input) { //Input is a string of "type pokemon"
     const embed = new MessageEmbed();
     //move type data
-    const typeName = message.content.split(" ")[1];
-    const typeMessage = { 'content': '$type ' + typeName}; //configure message so we can get the right type json
-    const typeData = await getTypeJSON(typeMessage);
+    const type = input.split(" ")[0];
+    const typeData = await getTypeJSON(type);
     const { damage_relations } = typeData;
     //pokemon type data
-    const pokemonName = message.content.split(" ")[2];
-    const pokemonMessage = { 'content': "$stats " + pokemonName};//configure message so we can get the right pokemon json
-    const pokemonData = await getPokemonJSON(pokemonMessage);
+    const pokemon = input.split(" ")[1];
+    const pokemonData = await getPokemonJSON(pokemon);
     const { types } = pokemonData;
     //effectiveness comparison
     const damageCalc = calculateMultiplier(damage_relations, types);
     const effectiveness = effectivenessCalculator(damageCalc);
     //create embed
-    const upperType = typeName.charAt(0).toUpperCase() + typeName.slice(1);
-    const upperPokemon = pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1);
+    const upperType = type.charAt(0).toUpperCase() + type.slice(1);
+    const upperPokemon = pokemon.charAt(0).toUpperCase() + pokemon.slice(1);
     embed.setTitle(upperType +' moves vs ' + upperPokemon);
     embed.addField('Damage Multiplier: ' + damageCalc, upperType + ' moves are ' + effectiveness + ' against ' + upperPokemon); 
     return embed;
@@ -39,10 +36,10 @@ function calculateMultiplier(damage_relations, pokemonTypes) {
         if (doubleDamageArray.includes(pokemonTypes[i].type.name)) {
             damageCalc *= 2;
         }
-        if (halfDamageArray.includes(pokemonTypes[i].type.name)) {
+        else if (halfDamageArray.includes(pokemonTypes[i].type.name)) {
             damageCalc *= .5;
         }
-        if (noDamageArray.includes(pokemonTypes[i].type.name)) {
+        else if (noDamageArray.includes(pokemonTypes[i].type.name)) {
             damageCalc *= 0;
         }
     }
@@ -51,10 +48,22 @@ function calculateMultiplier(damage_relations, pokemonTypes) {
 
 function effectivenessCalculator(damageCalc) {
     var effectiveness;
-    if (damageCalc == 0) effectiveness = 'no effect';
-    if (damageCalc == .25 || damageCalc == .5) effectiveness = 'not very effective';
-    if (damageCalc == 1) effectiveness = 'effective';
-    if (damageCalc == 2 || damageCalc == 4) effectiveness = 'super effective';
+    switch(damageCalc) {
+        case 0:
+            effectiveness = 'no effect';
+            break;
+        case .25:
+        case .5:
+            effectiveness = 'not very effective';
+            break;
+        case 1:
+            effectiveness = 'effective';
+            break;
+        case 2:
+        case 4:
+            effectiveness = 'super effective';
+            break;
+    } 
     return effectiveness;
 }
 
