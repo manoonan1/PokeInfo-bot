@@ -1,11 +1,11 @@
 {
   "name": "PokeInfo-bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "Bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/bot.js",
-    "web": "node ./src/bot.js",
+    "dev": "nodemon ./src/Bot.js",
+    "web": "node ./src/Bot.js",
     "start": "npm run dev"
   },
   "keywords": [],
