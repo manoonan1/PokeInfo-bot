@@ -6,6 +6,7 @@ const { getAbilityEmbed } = require('./Ability/CreateAbilityEmbed')
 const { getAbmonEmbed } = require('./Ability/CreateAbmonEmbed');
 const { getTypeEmbed } = require('./Type/CreateTypeEmbed');
 const { getVersusEmbed } = require('./Type/CreateVsEmbed');
+const { getHelpEmbed } = require('./Help.js');
 
 
 async function getEmbed(command, content) {
@@ -31,6 +32,9 @@ async function getEmbed(command, content) {
             break;
         case '$vs': //Example command $type grass vs charizard
             embed = await getVersusEmbed(content);
+            break;
+        case '$help': //Example command $help
+            embed = getHelpEmbed();
             break;
     }
     return embed;
