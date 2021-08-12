@@ -3,9 +3,9 @@ const { MessageEmbed } = require('discord.js');
 const { getTypeJSON, getDamageArray } = require('./GetType');
 
 //=======================$typeAd helper functions====================//
-async function getTypeEmbed(message) {
+async function getTypeEmbed(type) {
     const embed = new MessageEmbed();
-    const typeData = await getTypeJSON(message);
+    const typeData = await getTypeJSON(type);
     const { name, damage_relations } = typeData;
     const double = damage_relations.double_damage_to;
     const half = damage_relations.half_damage_to;

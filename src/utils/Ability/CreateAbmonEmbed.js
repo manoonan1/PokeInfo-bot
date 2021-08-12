@@ -5,9 +5,9 @@ const { getPokemonJSON } = require('../Pokemon/GetPokemon');
 
 //=======================$abmon helper functions====================//
 
-async function getAbmonEmbed(message){
+async function getAbmonEmbed(pokemon){
     const embed = new MessageEmbed();
-    const abData = await getPokemonJSON(message);
+    const abData = await getPokemonJSON(pokemon);
     const { abilities, name, sprites, id, } = abData;
     const abArray = await getAbilityArray(abilities);//creates a 2D array [ [ab1Name, ab1Effect], [ab2Name, ab2Effect], etc ]
     embed.setTitle(`${name} #${id}`); //of the Pokemon
@@ -23,8 +23,8 @@ async function getAbmonEmbed(message){
 async function getAbilityArray(abilities){ 
     let abilityArray = [];
     for (let i = 0; i<abilities.length; i++){
-        let message = { 'content': "$ability " + abilities[i].ability.name};
-        abilityArray.push(await getAbilityInfo(message));
+        let ability = abilities[i].ability.name;
+        abilityArray.push(await getAbilityInfo(ability));
     }
     return abilityArray;
 }

@@ -3,9 +3,9 @@ const { MessageEmbed } = require('discord.js');
 const { getPokemonJSON } = require('./GetPokemon');
 
 //=======================$stats helper functions====================//
-async function getStatsEmbed(message) {
+async function getStatsEmbed(pokemon) {
     const embed = new MessageEmbed();
-    const pokeData = await getPokemonJSON(message);
+    const pokeData = await getPokemonJSON(pokemon);
     const { sprites, stats, name, id, types } = pokeData;
     embed.setTitle(`${name} #${id}`);
     embed.setThumbnail(`${sprites.front_default}`);

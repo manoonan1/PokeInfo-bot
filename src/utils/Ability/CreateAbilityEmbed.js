@@ -3,9 +3,9 @@ const { MessageEmbed } = require('discord.js');
 const { getAbilityInfo } = require('./GetAbility');
 
 //=======================$ability helper functions====================//
-async function getAbilityEmbed(message) {
+async function getAbilityEmbed(ability) {
     const embed = new MessageEmbed();
-    const abilityInfo = await getAbilityInfo(message);
+    const abilityInfo = await getAbilityInfo(ability);
     const name = abilityInfo[0]; //name is stored at index 0
     const effect = abilityInfo[1]; //effect is stored at index 1 
     embed.setTitle(name);
