@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "Bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "dev": "nodemon ./src/Bot.js",
     "web": "node ./src/Bot.js",
     "start": "npm run dev"
@@ -18,7 +18,9 @@
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^9.0.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manoonan1/PokeInfo-bot.git"
