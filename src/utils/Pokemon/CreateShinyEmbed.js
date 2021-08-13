@@ -16,7 +16,7 @@ async function getShinyEmbed(pokemon) {
 
 async function getImageURLs(pokemon, shinyFlag) {
     //variant boolean check
-    if(isVariant(pokemon == true)){
+    if(isVariant(pokemon) == true){
         variantData = readJSON("src/utils/Pokemon/PokemonVariants.json");
         index = variantData.pokemon.findIndex(ind => ind.name === pokemon);
         if(shinyFlag == 0){
