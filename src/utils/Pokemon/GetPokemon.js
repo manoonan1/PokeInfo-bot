@@ -6,7 +6,6 @@ const  POKEMON_URL = 'https://pokeapi.co/api/v2/pokemon';
 //=======================$general helper functions====================//
 async function getPokemonJSON(pokemon) {
     correctPokemon = await correctPokemonInput(pokemon)
-    console.log(correctPokemon[0]);
     response = await fetch(`${POKEMON_URL}/${correctPokemon[0]}`);
     const pokemonData = response.json();
     return pokemonData;
