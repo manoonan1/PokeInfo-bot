@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "Bot.js",
   "scripts": {
-    "test": "mocha ./src/Test/test.js",
+    "test": "mocha ./src/test",
     "dev": "nodemon ./src/Bot.js",
     "web": "node ./src/Bot.js",
     "start": "npm run dev"
@@ -19,6 +19,7 @@
     "nodemon": "^2.0.12"
   },
   "devDependencies": {
+    "chai": "^4.3.4",
     "mocha": "^9.0.3"
   },
   "repository": {
