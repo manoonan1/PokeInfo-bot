@@ -18,4 +18,4 @@ async function getGifURL(pokemon) {
 }
 
 //=======================EXPORTS====================//
-module.exports = { getGifEmbed };
+module.exports = { getGifEmbed, getGifURL };
